@@ -7,6 +7,7 @@ import {
 } from "react-redux"
 import { AppDispatch, RootState } from "../../redux/store"
 import { increment, decrement } from "@/redux/slice"
+import { Button } from "@mui/material"
 const Page = () => {
      const dispatch = useDispatch<AppDispatch>()
      const dataSelector = useSelector((state: RootState) => state.test)
@@ -28,7 +29,9 @@ const Page = () => {
                     value={Number(dataSelector ? dataSelector : 0)}
                     readOnly
                />
+
                <button onClick={handlerClickDecrement}>-</button>
+               <Button variant="contained">Contained</Button>
           </>
      )
 }
