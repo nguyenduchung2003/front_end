@@ -6,7 +6,6 @@ export default function middleware(req: NextRequest) {
 
     console.log(cookies)
 
-    // console.log(new URL("/sign_in", req.url))
     // return NextResponse.redirect(new URL("/sign_in", req.url))
 }
 
